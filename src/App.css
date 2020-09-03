@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+  background: rgb(97, 97, 97);
+  background-image: url("./back.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+}

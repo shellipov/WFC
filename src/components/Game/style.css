@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Condenced;
+  src: url('../fonts/DINPro-CondensedBold.ttf');
+ }
+ @font-face {
+  font-family: Marker-Felt;
+  src: url('../fonts/MarkerFelt.ttc');
+ }
+@font-face {
+  font-family: Bebas-Neue;
+  src: url('../fonts/BebasNeueRegular.ttf');
+ }
+
+.gameZone{
+display: flex;
+margin-top: 90px;
+margin-bottom: 85px;
+}
+
+.title{
+  height: 360px;
+  width: 380px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titleText{
+  font-family: Marker-Felt;
+  color: white;
+  font-size: 72px;
+  text-shadow: 1px 1px 2px #421d4b;
+  margin-top: 5px;
+}
+
+.titleMessage{
+  font-family: Bebas-Neue;;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+
+}
+
+.result{
+  font-family: Bebas-Neue;;
+  color: white;
+  font-size: 24px;
+}
+
+.game{
+  background-color: #a8c514;
+  height: 360px;
+  width: 760px;
+  border: 1px solid #a8c514;
+  box-sizing: border-box;
+}
+
+.formQuestion{
+  font-family: Bebas-Neue;;
+  color: white;
+  font-size: 36px;
+  margin-top: 41px;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+.formOption{
+  display: flex;
+  align-items: center;
+  font-family: Condenced;;
+  color: white;
+  font-size: 18px;
+}
+#gameForm{
+  margin-left: 49px;
+}
+
+input[type=radio] {
+  border: 1px solid #fff;
+  padding: 0.5em;
+  -webkit-appearance: none;
+  height: 29px;
+  width: 29px;
+}
+
+input[type=radio]:checked {
+  background: url('./images/check.png') no-repeat center center;
+  background-size: 29px 29px;
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+
+.gameButton{
+  box-sizing: border-box;
+  width: 252px;
+  height: 59px;
+  border: 0px;
+  padding-left: 20px;
+  font-family: Condenced;
+  color: white !important;
+  font-size: 36px;
+  background: #e8335e;
+  margin-top: 40px;
+}
+
+.result{
+  padding: 30px;
+}
+
+.resultText{
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.detailsText{
+  font-size: 25px;
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.share{
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.vk{
+  background-image: url('./images/vk.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.instagram{
+  background-image: url('./images/insta.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.facebook{
+  background-image: url('./images/fb.png');
+  background-size: 100%;
+}
+
+.shareDiv{
+  display: flex;
+  align-items: center;
+}
+
+
+

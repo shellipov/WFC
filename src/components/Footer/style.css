@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Condenced;
+  src: url('../fonts/DINPro-CondensedBold.ttf');
+ }
+
+.footer{
+  height: 161px;
+  /* width: 1092px; */
+  box-sizing: border-box;
+  font-size:14px;
+  font-family: Condenced;
+  text-align: center;
+}
+
+.mainText{
+  font-size:24px;
+  margin-bottom: 12px;
+}
+
+.red{
+  color: #e61729;
+}
+
+

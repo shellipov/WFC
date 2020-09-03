@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Condenced;
+  src: url('../fonts/DINPro-CondensedBold.ttf');
+ }
+ @font-face {
+  font-family: Marker-Felt;
+  src: url('../fonts/MarkerFelt.ttc');
+ }
+@font-face {
+  font-family: Bebas-Neue;
+  src: url('../fonts/BebasNeueRegular.ttf');
+ }
+
+.string{
+  display: flex;
+}
+
+.square{
+  height: 380px;
+  width: 380px;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.logo{
+  height: 60px;
+  width:  210px;
+  background: url('./images/Logo Dixy_gorizont.png');
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 37px;
+}
+.text1{
+  font-family: Marker-Felt;
+  color: white;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #421d4b;
+}
+.text2{
+  font-family: Marker-Felt;
+  color: white;
+  font-size: 90px;
+  text-shadow: 1px 1px 2px #421d4b;
+  margin-bottom: 29px;
+
+}
+.text3{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 30px;
+}
+
+
+.two{
+  background-color: #e8335e;
+  background-image: url("./images/back2.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo1{
+  height: 70px;
+  width:  91px;
+  background: url('./images/card.png');
+  background-repeat: no-repeat;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
+}
+.text4{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.text5{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 24px;
+}
+
+.three{
+  background-color: #a8c514;
+  background-image: url("./images/back3.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo{
+  height: 300px;
+  width:  242px;
+  background: url('./images/photo.png');
+  background-repeat: no-repeat;
+}
+
+
+.four{
+  background-color: #491f53;
+  background-image: url("./images/back4.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo2{
+  height: 95px;
+  width:  95px;
+  background: url('./images/basket.png');
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+
+}
+.text6{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+.doublesquare{
+  background-color: #ef7d00;
+  background-image: url("./images/back5.png");
+  height: 380px;
+  width: 760px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo2{
+  height: 300px;
+  width:  310px;
+  background: url('./images/photo2.png');
+  background-repeat: no-repeat;
+}
+.text7{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 36px;
+  margin-bottom: -45px
+}
+
+.left{
+  text-align: right;
+  margin-right: 5px;
+}
+
+.specialFont{
+  font-size: 17px;
+  height: 100px;
+}

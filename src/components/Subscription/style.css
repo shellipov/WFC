@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Marker-Felt;
+  src: url('../fonts/MarkerFelt.ttc');
+ }
+@font-face {
+  font-family: Bebas-Neue;
+  src: url('../fonts/BebasNeueRegular.ttf');
+ }
+ @font-face {
+  font-family: Condenced;
+  src: url('../fonts/DINPro-CondensedBold.ttf');
+ }
+
+.subscription{
+  background-color: #ef7d00;
+  height: 364px;
+  width: 1140px;
+  border: 1px solid #ef7d00;
+  margin-bottom: 55px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+.subscriptionTitle{
+  font-family: Marker-Felt;
+  color: white;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #421d4b;
+}
+
+.subscriptionText{
+  font-family: Bebas-Neue;
+  color: white;
+  font-size: 24px;
+}
+
+.SubscriptionInput{
+  box-sizing: border-box;
+  width: 360px;
+  height: 59px;
+  margin: 14px;
+  background-color: #ef7d00;
+  border: 2px solid white;
+  font-family: Condenced;
+  color: white !important;
+  font-size: 24px;
+  padding-left: 20px;
+}
+::placeholder {
+  font-family: Condenced;
+  color: white !important;
+  font-size: 24px;
+}
+.SubscriptionSubmit{
+  box-sizing: border-box;
+  width: 252px;
+  height: 59px;
+  margin: 14px;
+  border: 0px;
+  padding-left: 20px;
+  font-family: Condenced;
+  color: white !important;
+  font-size: 24px;
+  background: #421d4b;
+}
+
+.subscriptionSuccess{
+  font-family: Marker-Felt;
+  margin-top: 60px;
+  color: white;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #421d4b;
+}
