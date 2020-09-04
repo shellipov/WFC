@@ -1,4 +1,4 @@
-## Available Scripts
+## wfc
 
 In the project directory, you can run:
 
