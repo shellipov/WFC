@@ -1,3 +1,7 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
 import { test, results } from './data';
 // eslint-disable-next-line no-unused-vars
@@ -22,25 +26,22 @@ function Game() {
       setUserScore(userScore + userAnswer * 1);
       setUserAnswer(0);
       setQuestion(test[counter]);
+      const inputs = document.querySelectorAll('input');
+      inputs.forEach((input) => input.checked = false);
     } else if (counter === test.length) {
-      console.log(userScore);
       if (userScore > 10) {
         setResult(results[0]);
         setTestDone(true);
-        console.log('>10');
-      }
-      else if (userScore > 5) {
+      } else if (userScore > 5) {
         setResult(results[1]);
         setTestDone(true);
-        console.log('>5');
-      }
-      else if (userScore > 0) {
+      } else if (userScore > 0) {
         setResult(results[2]);
         setTestDone(true);
-        console.log('>0');
       }
     }
   }
+
   return (
     <>
       <div className="gameZone">
@@ -70,10 +71,11 @@ function Game() {
                   <div className="resultText">{result.result}</div>
                   <div className="detailsText">{result.details}</div>
                   <div className="shareDiv">
-                    Полелится
-                    <button className="share vk" type="button" />
+                    Поделится
+                    <a target="_blank" href={`https://vk.com/share.php?url=https://dixy.ru/&title= Я прошел тест в Дикси. Как оказалось, я - ${result.result}&noparse=true`} className="share vk" />
                     <button className="share instagram" type="button" />
                     <button className="share facebook" type="button" />
+
                   </div>
                 </div>
               </>
