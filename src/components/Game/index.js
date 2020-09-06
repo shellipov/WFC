@@ -1,8 +1,10 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable no-return-assign */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
+import Share from '../Share';
 import { test, results } from './data';
 // eslint-disable-next-line no-unused-vars
 import css from './style.css';
@@ -72,10 +74,7 @@ function Game() {
                   <div className="detailsText">{result.details}</div>
                   <div className="shareDiv">
                     Поделится
-                    <a target="_blank" href={`https://vk.com/share.php?url=https://dixy.ru/&title= Я прошел тест в Дикси. Как оказалось, я - ${result.result}&noparse=true`} className="share vk" />
-                    <button className="share instagram" type="button" />
-                    <button className="share facebook" type="button" />
-
+                    <Share result={result.result} />
                   </div>
                 </div>
               </>
@@ -85,7 +84,7 @@ function Game() {
                 <form id="gameForm" onSubmit={game}>
                   <div className="formQuestion">{question.question}</div>
                   {question.options.map((option, index) => (
-                    <div onChange={getValue} className="formOption">
+                    <div key={index} onChange={getValue} className="formOption">
                       <input className="radioOption" type="radio" name="answer" value={index + 1} />
                       {option}
                     </div>
